@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Barlow Condensed", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+* {
+  border-color: #E4E0D6;
+}
+
+body {
+  font-feature-settings: "cv11", "ss01";
+}
+
+::selection {
+  background: #1F3A5F;
+  color: #fff;
+}
+
+/* Stamp-style badge used for stock IN / OUT movements */
+.stamp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border: 1.5px dashed currentColor;
+  border-radius: 3px;
+  transform: rotate(-1.5deg);
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #E4E0D6;
+  border-radius: 999px;
+}
